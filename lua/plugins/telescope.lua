@@ -22,6 +22,10 @@ return {
         },
       })
       require("telescope").load_extension("ui-select")
+
+      vim.keymap.set('n', 'gr', function()
+        require('telescope.builtin').lsp_references()
+      end, { noremap = true, silent = true })
     end,
   },
 }

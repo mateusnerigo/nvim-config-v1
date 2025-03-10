@@ -14,3 +14,7 @@ vim.keymap.set("n", "<S-A-Down>", "yyp", opts)
 -- toggle search pattern
 vim.keymap.set({"n", "v"}, "<esc>", ":noh<CR>", opts)
 
+-- buffer list
+vim.keymap.set({"n", "v"}, "<S-A-l>", ":ls<CR>", opts)
+vim.keymap.set({"n", "v"}, "<S-A-n>", ":bnext<CR>", opts)
+vim.keymap.set({"n", "v"}, "<S-A-m>", ":bprevious<CR>", opts)
